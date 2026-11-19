@@ -8,7 +8,14 @@ type HeroSectionProps = {
 export function HeroSection({ onOpenPlanned }: HeroSectionProps) {
   return (
     <section className="hero" aria-labelledby="hero-title">
-      <div className="hero__visual" aria-hidden="true" />
+
+<div
+  className="hero__visual"
+  aria-hidden="true"
+  style={{
+    backgroundImage: `url("${import.meta.env.BASE_URL}images/lpg-hero.webp")`,
+  }}
+/>
       <div className="hero__gradient" aria-hidden="true" />
       <div className="content-width hero__inner">
         <div className="hero__content">
