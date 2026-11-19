@@ -1,0 +1,23 @@
+# Dependencies
+**/node_modules/
+
+# Build outputs
+**/dist/
+**/coverage/
+**/.vite/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Debug and temporary files
+*.log
+*.tsbuildinfo

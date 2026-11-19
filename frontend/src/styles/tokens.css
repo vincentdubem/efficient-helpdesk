@@ -1,0 +1,21 @@
+/* Centralized design tokens: update the visual system here. */
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color-scheme: light;
+  --color-navy: #0b2545;
+  --color-navy-deep: #06204c;
+  --color-navy-dark: #061a38;
+  --color-orange: #ff8500;
+  --color-orange-hover: #ee7800;
+  --color-teal: #087f7b;
+  --color-background: #f3f7fd;
+  --color-white: #fff;
+  --color-text: #0b1c42;
+  --color-muted: #596980;
+  --color-border: #dce6f1;
+  --color-focus: #3ad7d0;
+  --font-heading: 'Poppins', 'Inter', system-ui, sans-serif;
+  --shadow-card: 0 10px 30px rgb(19 46 83 / 9%);
+  --radius-card: 18px;
+  --container-width: 1544px;
+}
