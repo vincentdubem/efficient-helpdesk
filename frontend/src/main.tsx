@@ -4,6 +4,8 @@ import App from './App';
 import './styles/tokens.css';
 import './styles/global.css';
 import './styles/homepage.css';
+import './styles/modules.css';
+import './pages/submit.css';
 
 const root = document.getElementById('root');
 

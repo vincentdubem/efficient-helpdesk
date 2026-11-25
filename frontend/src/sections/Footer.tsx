@@ -15,7 +15,7 @@ export function Footer({ onOpenPlanned }: FooterProps) {
         </div>
         <div className="footer__links">
           <h2>Quick links</h2>
-          <a href="#home">Home</a>
+          <a href="#/home">Home</a>
           <button type="button" onClick={() => onOpenPlanned('submit')}>Submit Complaint</button>
           <button type="button" onClick={() => onOpenPlanned('track')}>Track Complaint</button>
         </div>
@@ -27,7 +27,7 @@ export function Footer({ onOpenPlanned }: FooterProps) {
       </div>
       <div className="content-width footer__bottom">
         <span>© {new Date().getFullYear()} Efficient Helpdesk. Academic project prototype.</span>
-        <a href="#home">Back to top ↑</a>
+        <a href="#/home">Back to top ↑</a>
       </div>
     </footer>
   );

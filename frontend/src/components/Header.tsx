@@ -5,9 +5,10 @@ import type { PlannedPage } from '../data/homepage';
 
 type HeaderProps = {
   onOpenPlanned: (page: PlannedPage) => void;
+  active?: string;
 };
 
-export function Header({ onOpenPlanned }: HeaderProps) {
+export function Header({ onOpenPlanned, active = 'home' }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function openPlanned(page: PlannedPage) {
@@ -46,9 +47,9 @@ export function Header({ onOpenPlanned }: HeaderProps) {
           id="primary-navigation"
           aria-label="Main navigation"
         >
-          <a className="primary-nav__link primary-nav__link--active" href="#home" aria-current="page" onClick={closeMenu}>Home</a>
-          <button className="primary-nav__link" type="button" onClick={() => openPlanned('submit')}>Submit Complaint</button>
-          <button className="primary-nav__link" type="button" onClick={() => openPlanned('track')}>Track Complaint</button>
+          <a className={`primary-nav__link ${active === 'home' ? 'primary-nav__link--active' : ''}`} href="#/home" aria-current={active === 'home' ? 'page' : undefined} onClick={closeMenu}>Home</a>
+          <button className={`primary-nav__link ${active === 'submit' ? 'primary-nav__link--active' : ''}`} type="button" onClick={() => openPlanned('submit')}>Submit Complaint</button>
+          <button className={`primary-nav__link ${active === 'track' ? 'primary-nav__link--active' : ''}`} type="button" onClick={() => openPlanned('track')}>Track Complaint</button>
           <a className="primary-nav__link" href="#about" onClick={closeMenu}>About</a>
           <a className="primary-nav__link" href="#contact" onClick={closeMenu}>Contact</a>
           <button className="primary-nav__login" type="button" onClick={() => openPlanned('login')}>

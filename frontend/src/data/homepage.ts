@@ -46,21 +46,3 @@ export const steps = [
 ] as const;
 
 export type PlannedPage = 'submit' | 'track' | 'login';
-
-export const plannedPageCopy: Record<PlannedPage, { title: string; description: string }> = {
-  submit: {
-    title: 'Complaint submission is coming next',
-    description:
-      'The complaint form and ticket creation API are planned for the next development phase. This homepage is currently a UI-only prototype.',
-  },
-  track: {
-    title: 'Ticket tracking is coming next',
-    description:
-      'Customer accounts, ticket reference lookup, and complaint status updates will be added after the complaint form and backend are implemented.',
-  },
-  login: {
-    title: 'Secure login is coming next',
-    description:
-      'Customer and administrator authentication will be built in the next project milestones. No login information is collected on this page.',
-  },
-};
