@@ -18,7 +18,7 @@
 
 /* Hero */
 .hero { isolation: isolate; min-height: 605px; position: relative; display: flex; align-items: stretch; overflow: hidden; background: linear-gradient(123deg, #062757 0%, #06336e 60%, #12468d 100%); color: white; }
-.hero__visual { z-index: -2; position: absolute; inset: 0 0 0 auto; width: 59%; background-image: url('/images/lpg-hero.webp'); background-size: cover; background-position: center center; clip-path: polygon(23% 0%, 17% 16%, 11% 37%, 5% 66%, 0% 100%, 100% 100%, 100% 0%); }
+.hero__visual { z-index: -2; position: absolute; inset: 0 0 0 auto; width: 59%; background-size: cover; background-position: center center; clip-path: polygon(23% 0%, 17% 16%, 11% 37%, 5% 66%, 0% 100%, 100% 100%, 100% 0%); }
 .hero__gradient { z-index: -1; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgb(3 26 65 / 17%) 0%, rgb(8 36 85 / 2%) 55%, transparent 80%); }
 .hero__inner { display: flex; align-items: center; min-height: inherit; }
 .hero__content { position: relative; width: min(55%, 695px); padding: 32px 0 34px 28px; }

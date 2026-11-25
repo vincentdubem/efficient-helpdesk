@@ -6,7 +6,7 @@ type BrandProps = {
 export function Brand({ compact = false, light = false }: BrandProps) {
   return (
     <a
-      href="#home"
+      href="#/home"
       className={`brand ${compact ? 'brand--compact' : ''} ${light ? 'brand--light' : ''}`}
       aria-label="Efficient Helpdesk — home"
     >
